@@ -1,8 +1,6 @@
 # UW ui-theme
 
----
-
-## Using Bootstrap Variable Overrides Theme
+## Using Bootstrap Variable Overrides
 
 Install in app:
 ```console
