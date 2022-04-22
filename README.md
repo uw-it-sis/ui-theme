@@ -1,15 +1,17 @@
 # UW Bootstrap Theme
 
+Currently using Bootstrap v4
+
 ## Using Bootstrap Variable Overrides
 
 This option would be if you only wanted to import the UW specific overrides for the Bootstrap variables.
 
 #### Install Bootstrap and ui-theme to your app:
 ```console
-npm install bootstrap @uw-it-sis/ui-theme
+npm install bootstrap@4.6.1 @uw-it-sis/ui-theme
 ```
 
-#### Create your your styles file:
+#### Create your styles file:
 ```console
 touch src/index.scss
 ```
@@ -38,7 +40,7 @@ This option would be the full package, you just want to import the fully customi
 npm install @uw-it-sis/ui-theme
 ```
 
-#### Create your your styles file:
+#### Create your styles file:
 ```console
 touch src/index.css
 ```
