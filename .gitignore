@@ -1,0 +1,7 @@
+.idea/
+.stylelintcache/
+lib/
+node_modules/
+*.iml
+*.log
+*.tgz

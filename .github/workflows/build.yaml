@@ -1,0 +1,33 @@
+name: Publish ui-theme package to GitHub Packages
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS 14
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@uw-it-sis'
+
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish Artifacts
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
