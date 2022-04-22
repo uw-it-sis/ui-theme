@@ -1,6 +1,6 @@
 {
   "name": "@uw-it-sis/ui-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SCSS and CSS files for UW Bootstrap styling to theme applications",
   "repository": {
     "type": "git",

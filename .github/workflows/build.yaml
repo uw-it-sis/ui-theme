@@ -1,4 +1,4 @@
-name: Publish ui-theme package to GitHub Packages
+name: Build & Publish ui-theme package to GitHub Packages
 on:
   push:
     branches:
